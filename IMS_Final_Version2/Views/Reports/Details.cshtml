@@ -1,0 +1,50 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblReport
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblReport</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReportTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReportTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReportDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReportDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReportFilePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReportFilePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblSector.SectorName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReportId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

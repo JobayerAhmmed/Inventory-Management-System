@@ -1,0 +1,162 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblUser>
+
+@{
+    ViewBag.Title = "SetDirector";
+}
+
+<h2>SetDirector</h2>
+
+@using (Html.BeginForm("SetDirector", "System", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary(true);
+                                 if (ViewBag.CheckedStatus != null)
+                                 {
+                                    <div>
+                                        @ViewBag.CheckedStatus
+                                    </div>
+                                 }
+
+                                <h2>Current Director Information</h2>
+                                <table class="table">
+                                    <tr>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.UserName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FirstName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LastName)
+                                        </th>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.JobPosition)
+                                        </th>
+
+                                        <th></th>
+                                    </tr>
+
+                                    @foreach (var modelValue in Model)
+                                    {
+                                        if (modelValue.SystemPosition == 4)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => modelValue.UserName)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => modelValue.FirstName)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => modelValue.LastName)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => modelValue.JobPosition)
+                                                </td>
+
+                                            </tr>
+                                        }
+
+                                    }
+
+
+                                </table>
+                                <h3>Set current director as</h3>
+
+    for (int i = 2; i <= 3; i++)
+    {
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name="oldDirectorCheck" value=@i />
+                </td>
+                <td>
+                    <p>@SystemRole(i)</p>
+                </td>
+            </tr>
+        </table>
+    }
+
+
+    <h1>Set New Director</h1>
+    <table class="table">
+        <tr>
+            <th>
+                <p>Select Here</p>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.JobPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystemPosition)
+            </th>
+
+            <th></th>
+        </tr>
+
+
+
+
+        @foreach (var modelValue in Model)
+        {
+            <tr>
+                <td>
+                    <input type="checkbox" name="check" value="@modelValue.UserId" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelValue.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelValue.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelValue.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelValue.JobPosition)
+                </td>
+                <td>
+                    <p>@SystemRole((int)modelValue.SystemPosition)</p>
+                </td>
+            </tr>
+
+        }
+    </table>
+    <div class="form-actions no-color">
+        <input type="submit" value="Save" />
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @functions{
+        public string SystemRole(int SystemPosition)
+        {
+            if (SystemPosition == 1)
+                return "Store in Charge";
+            else if (SystemPosition == 2)
+                return "User";
+            else if (SystemPosition == 3)
+                return "Recommender";
+            else if (SystemPosition == 4)
+                return "Director";
+            else
+                return "";
+        }
+    }
+
+
+
+
+}

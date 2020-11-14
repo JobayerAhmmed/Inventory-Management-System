@@ -1,0 +1,66 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRightPage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblRightPage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TakingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TakingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhereLocated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhereLocated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblItem.ItemDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblItem.ItemDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblLeftPage.ReceiveingInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblLeftPage.ReceiveingInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblRequisitionSlip.IssuingPurpose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblRequisitionSlip.IssuingPurpose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

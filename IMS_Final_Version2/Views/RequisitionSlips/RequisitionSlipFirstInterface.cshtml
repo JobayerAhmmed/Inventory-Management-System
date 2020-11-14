@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "RequisitionSlipFirstInterface";
+}
+
+<h4>Select Option</h4>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Requisition History", "UserRecommenderDirectorRequisitionHistory")</li>
+        <li>@Html.ActionLink("Create Requisition Slip", "ShowAllCategoryForRequisitionSlip", "Inventories")</li>
+    </ul>
+</div>
+<h1></h1>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

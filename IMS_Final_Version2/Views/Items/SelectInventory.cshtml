@@ -1,0 +1,31 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblItem>
+
+@{
+    ViewBag.Title = "SelectInventory";
+}
+
+<h2>SelectInventory</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.tblInventory.InventoryName, "SaveInventoryInformtion", "Items", new { inventoryId = item.InventoryId }, null)
+
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ItemId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ItemId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ItemId })
+            </td>
+        </tr>
+    }
+
+</table>

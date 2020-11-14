@@ -1,0 +1,63 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRequisitionSlip
+
+@{
+    ViewBag.Title = "RequisitionSlip";
+}
+
+<h2></h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4></h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IssuingPurpose, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IssuingPurpose, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IssuingPurpose, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @foreach (string itemName in ViewData["inventoryName"] as string[])
+        {
+            <div>@itemName</div>
+
+        }
+
+        @*<div class="form-group">
+            <span>Selected item:  @ViewBag.firstInventoryName</span> <span>Amount: @ViewBag.firstCategoryAmount</span>
+        </div>
+
+        <div class="form-group">
+            <span>Selected item:  @ViewBag.secondInventoryName</span> <span>Amount: @ViewBag.secondCategoryAmount</span>
+        </div>
+
+        <div class="form-group">
+            <span>Selected item:  @ViewBag.thirdInventoryName</span> <span>Amount : @ViewBag.thirdCategoryAmount</span>
+        </div>*@
+
+
+
+
+
+
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Ok" class="btn btn-default" />
+            </div>
+        </div>
+
+      
+    </div>
+}
+
+

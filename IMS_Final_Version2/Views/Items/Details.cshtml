@@ -1,0 +1,50 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPicked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPicked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblInventory.InventoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblInventory.InventoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblSector.SectorName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

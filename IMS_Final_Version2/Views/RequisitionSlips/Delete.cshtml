@@ -1,0 +1,112 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRequisitionSlip
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tblRequisitionSlip</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RequisitionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequisitionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssuingPurpose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssuingPurpose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AllInventoryNameWithAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AllInventoryNameWithAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecommenderResponse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecommenderResponse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectorResponse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectorResponse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemsId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblNotification.NotificationBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblNotification.NotificationBody)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser1.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser1.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser2.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser2.UserName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

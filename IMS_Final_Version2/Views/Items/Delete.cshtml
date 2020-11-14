@@ -1,0 +1,56 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblItem
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tblItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPicked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPicked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblInventory.InventoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblInventory.InventoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblSector.SectorName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

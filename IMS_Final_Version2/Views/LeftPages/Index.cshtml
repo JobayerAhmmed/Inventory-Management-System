@@ -1,0 +1,81 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblLeftPage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiveingInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceivingSerial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceivingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreviousBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoOfReceivingArticles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblInventory.InventoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblVouchar.VoucharFilePath)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiveingInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceivingSerial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceivingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreviousBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoOfReceivingArticles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblSector.SectorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblVouchar.VoucharFilePath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PageId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PageId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PageId })
+        </td>
+    </tr>
+}
+
+</table>

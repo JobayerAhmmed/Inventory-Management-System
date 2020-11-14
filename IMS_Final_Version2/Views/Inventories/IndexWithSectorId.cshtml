@@ -1,0 +1,39 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblInventory>
+
+@{
+    ViewBag.Title = "Article";
+}
+
+<h4>List of articles</h4>
+
+<p>
+    @Html.ActionLink("Add new type of article", "Create", new { sectorId = ViewBag.SectorId }, null) |
+    @Html.ActionLink("Back to Register Book", "Index", "Sectors")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.InventoryName, "Details", new { id = item.InventoryId, sectorId = ViewBag.SectorId })
+            </td>
+
+            <td>
+                @Html.ActionLink("Receive", "IndexWithSectorAndInventoryId", "LeftPages", new { sectorId = ViewBag.SectorId, inventoryId = item.InventoryId }, null) |
+                @Html.ActionLink("Issue", "Index", "RightPages")
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Back to Home", "defineRole", "System")

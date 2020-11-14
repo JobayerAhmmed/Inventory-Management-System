@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "DirectorRequisitionHistoryCheck";
+}
+
+<h1></h1>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("As User", "MyRequisitionHistory")</li>
+        <li>@Html.ActionLink("As Director", "DirectorRequisitionHistoryCheckAsRecommender")</li>
+    </ul>
+</div>
+
+
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

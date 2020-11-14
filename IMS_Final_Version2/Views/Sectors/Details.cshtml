@@ -1,0 +1,40 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblSector
+
+@{
+    ViewBag.Title = "Register Book";
+}
+
+<div>
+    <h4>Register Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SectorName)
+        </dd>
+
+        <dt>
+            Description
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SectorDescription)
+        </dd>
+
+        <dt>
+            Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatingDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SectorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

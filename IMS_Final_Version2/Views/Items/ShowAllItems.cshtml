@@ -1,0 +1,52 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblItem>
+
+@{
+    ViewBag.Title = "AllItems";
+}
+<link href="~/Content/Style.css" rel="stylesheet" />
+<h3>All Available Inventories</h3>
+
+
+<table class="table">
+    <tr>
+        <th>
+           @Html.Raw("Description")
+        </th>
+
+        <th>
+            @Html.Raw("Category")
+        </th>
+        <th>
+            @Html.Raw("Picture")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        if (item.IsPicked == 0)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ItemDescription)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+                </td>
+                <td class="inventoryImage">
+                    <img src="@Url.Content("~/Images/MainImage.jpg")" alt="Picture is not available" />
+                </td>
+
+            </tr>
+        }
+
+    }
+
+</table>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

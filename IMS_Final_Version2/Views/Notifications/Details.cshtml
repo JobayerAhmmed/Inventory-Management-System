@@ -1,0 +1,58 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblNotification
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblNotification</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationBody)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSeen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSeen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser1.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser1.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NotificationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

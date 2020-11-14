@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.inventoryImage{
+    display: block;
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+.home{
+    text-align: center;
+}
+
+.homeImage{
+    width: auto;
+    height: auto;
+}

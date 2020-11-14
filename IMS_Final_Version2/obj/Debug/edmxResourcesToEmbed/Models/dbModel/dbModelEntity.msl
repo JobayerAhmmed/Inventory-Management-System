@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_IMSModelStoreContainer" CdmEntityContainer="db_IMSEntities">
+    <EntitySetMapping Name="tblInventories">
+      <EntityTypeMapping TypeName="db_IMSModel.tblInventory">
+        <MappingFragment StoreEntitySet="tblInventory">
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="InventoryName" ColumnName="InventoryName" />
+          <ScalarProperty Name="InventoryDescription" ColumnName="InventoryDescription" />
+          <ScalarProperty Name="InventoryPicturePath" ColumnName="InventoryPicturePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItems">
+      <EntityTypeMapping TypeName="db_IMSModel.tblItem">
+        <MappingFragment StoreEntitySet="tblItem">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="IsPicked" ColumnName="IsPicked" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeftPages">
+      <EntityTypeMapping TypeName="db_IMSModel.tblLeftPage">
+        <MappingFragment StoreEntitySet="tblLeftPage">
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="ReceiveingInfo" ColumnName="ReceiveingInfo" />
+          <ScalarProperty Name="ReceivingSerial" ColumnName="ReceivingSerial" />
+          <ScalarProperty Name="ReceivingDate" ColumnName="ReceivingDate" />
+          <ScalarProperty Name="PreviousBalance" ColumnName="PreviousBalance" />
+          <ScalarProperty Name="NoOfReceivingArticles" ColumnName="NoOfReceivingArticles" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="InventoryId" ColumnName="InventoryId" />
+          <ScalarProperty Name="VoucharId" ColumnName="VoucharId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNotifications">
+      <EntityTypeMapping TypeName="db_IMSModel.tblNotification">
+        <MappingFragment StoreEntitySet="tblNotification">
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+          <ScalarProperty Name="SenderId" ColumnName="SenderId" />
+          <ScalarProperty Name="ReceiverId" ColumnName="ReceiverId" />
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="NotificationBody" ColumnName="NotificationBody" />
+          <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblReports">
+      <EntityTypeMapping TypeName="db_IMSModel.tblReport">
+        <MappingFragment StoreEntitySet="tblReport">
+          <ScalarProperty Name="ReportId" ColumnName="ReportId" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="ReportTitle" ColumnName="ReportTitle" />
+          <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+          <ScalarProperty Name="ReportFilePath" ColumnName="ReportFilePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRequisitionSlips">
+      <EntityTypeMapping TypeName="db_IMSModel.tblRequisitionSlip">
+        <MappingFragment StoreEntitySet="tblRequisitionSlip">
+          <ScalarProperty Name="RequisitionSlipId" ColumnName="RequisitionSlipId" />
+          <ScalarProperty Name="RequisitionDate" ColumnName="RequisitionDate" />
+          <ScalarProperty Name="IssuingPurpose" ColumnName="IssuingPurpose" />
+          <ScalarProperty Name="AllInventoryNameWithAmount" ColumnName="AllInventoryNameWithAmount" />
+          <ScalarProperty Name="ApplicantId" ColumnName="ApplicantId" />
+          <ScalarProperty Name="RecommenderId" ColumnName="RecommenderId" />
+          <ScalarProperty Name="DirectorId" ColumnName="DirectorId" />
+          <ScalarProperty Name="RecommenderResponse" ColumnName="RecommenderResponse" />
+          <ScalarProperty Name="DirectorResponse" ColumnName="DirectorResponse" />
+          <ScalarProperty Name="ApplicationStatus" ColumnName="ApplicationStatus" />
+          <ScalarProperty Name="ItemsId" ColumnName="ItemsId" />
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRightPages">
+      <EntityTypeMapping TypeName="db_IMSModel.tblRightPage">
+        <MappingFragment StoreEntitySet="tblRightPage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TakingDate" ColumnName="TakingDate" />
+          <ScalarProperty Name="WhereLocated" ColumnName="WhereLocated" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RequisitionSerialNumber" ColumnName="RequisitionSerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSectors">
+      <EntityTypeMapping TypeName="db_IMSModel.tblSector">
+        <MappingFragment StoreEntitySet="tblSector">
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="SectorName" ColumnName="SectorName" />
+          <ScalarProperty Name="SectorDescription" ColumnName="SectorDescription" />
+          <ScalarProperty Name="CreatingDate" ColumnName="CreatingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="db_IMSModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="JobPosition" ColumnName="JobPosition" />
+          <ScalarProperty Name="SystemPosition" ColumnName="SystemPosition" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="SignaturePath" ColumnName="SignaturePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVouchars">
+      <EntityTypeMapping TypeName="db_IMSModel.tblVouchar">
+        <MappingFragment StoreEntitySet="tblVouchar">
+          <ScalarProperty Name="VoucharId" ColumnName="VoucharId" />
+          <ScalarProperty Name="VoucharFilePath" ColumnName="VoucharFilePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

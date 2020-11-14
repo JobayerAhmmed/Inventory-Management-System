@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "NotificationSystem";
+}
+
+
+<h2></h2>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Message Queue", "NotificationQueue", "Notifications")</li>
+        <li>@Html.ActionLink("Send Notification", "SendNotification", "Notifications")</li>
+    </ul>
+</div>
+<h2></h2>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

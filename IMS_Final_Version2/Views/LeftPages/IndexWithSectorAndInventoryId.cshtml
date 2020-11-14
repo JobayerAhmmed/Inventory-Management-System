@@ -1,0 +1,78 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblLeftPage>
+
+@{
+    ViewBag.Title = "Receive";
+}
+
+<h4>List of receiving</h4>
+
+<p>
+    @Html.ActionLink("Receive new", "CreateWithSectorAndInventoryId", new { sectorId = ViewBag.SectorId, inventoryId = ViewBag.InventoryId }) |
+    @Html.ActionLink("Back to Article", "IndexWithSectorId", "Inventories", new { sectorId = ViewBag.SectorId}, null)
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Name of Article
+        </th>
+        <th>
+            Register Book
+        </th>
+        <th>
+            Balance
+        </th>
+        <th>
+            Date
+        </th>
+        <th>
+            RECEIVED
+        </th>
+        <th>
+            No. of aritcles
+        </th>
+        <th>
+            Total
+        </th>
+        <th>
+            Serial
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblSector.SectorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreviousBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceivingDate)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.ReceiveingInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoOfReceivingArticles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalBalance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReceivingSerial)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.PageId })*@
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Back to Home", "defineRole", "System")

@@ -1,0 +1,72 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRightPage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tblRightPage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TakingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TakingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhereLocated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhereLocated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblItem.ItemDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblItem.ItemDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblLeftPage.ReceiveingInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblLeftPage.ReceiveingInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblRequisitionSlip.IssuingPurpose)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblRequisitionSlip.IssuingPurpose)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

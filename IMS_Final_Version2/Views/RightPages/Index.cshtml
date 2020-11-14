@@ -1,0 +1,71 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblRightPage>
+
+@{
+    ViewBag.Title = "Issue";
+}
+
+<h4>List of issueing</h4>
+
+<p>
+    @Html.ActionLink("Issue", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Date
+        </th>
+        <th>
+            Purpose of which issued
+        </th>
+        <th>
+            No. of Articles
+        </th>
+        <th>
+            Balance
+        </th>
+        <th>
+            Where located
+        </th>
+        <th>
+            Recipient
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblItem.ItemDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblLeftPage.PageId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TakingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblRequisitionSlip.IssuingPurpose)
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WhereLocated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblUser.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblItem.ItemDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblLeftPage.PageId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
