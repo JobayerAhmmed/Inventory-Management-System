@@ -1,0 +1,51 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsPicked)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblInventory.InventoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsPicked)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblSector.SectorName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ItemId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ItemId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ItemId })
+        </td>
+    </tr>
+}
+
+</table>

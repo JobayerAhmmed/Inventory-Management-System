@@ -1,0 +1,98 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRequisitionSlip
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    <h4>Requisition Slip</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.Raw("Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequisitionDate)
+        </dd>
+
+        <dt>
+           @Html.Raw("Purpose")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssuingPurpose)
+        </dd>
+
+        <dt>
+            @Html.Raw("Name and Amount")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AllInventoryNameWithAmount)
+        </dd>
+
+        <dt>
+            @Html.Raw("Recommender Response")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecommenderResponse)
+        </dd>
+
+        <dt>
+            @Html.Raw("Director Response")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectorResponse)
+        </dd>
+
+        <dt>
+            @Html.Raw("Application Status")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationStatus)
+        </dd>
+
+       
+
+        <dt>
+            @Html.Raw("Note")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblNotification.NotificationBody)
+        </dd>
+
+        <dt>
+            @Html.Raw("Applicant")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+        <dt>
+            @Html.Raw("Recommender")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser1.UserName)
+        </dd>
+
+      
+
+        
+
+    </dl>
+</div>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

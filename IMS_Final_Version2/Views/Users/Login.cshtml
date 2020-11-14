@@ -1,0 +1,42 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblUser
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "Users", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary(true);
+
+    <table>
+        <tr>
+            <td>@Html.LabelFor(a => a.UserName)</td>
+            <td>@Html.TextBoxFor(a => a.UserName)</td>
+            <td>@Html.ValidationMessageFor(a => a.UserName)</td>
+        </tr>
+
+
+        <tr>
+            <td>@Html.LabelFor(a => a.Password)</td>
+            <td>@Html.PasswordFor(a => a.Password)</td>
+            <td>@Html.ValidationMessageFor(a => a.Password)</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Log In" />
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+}
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}

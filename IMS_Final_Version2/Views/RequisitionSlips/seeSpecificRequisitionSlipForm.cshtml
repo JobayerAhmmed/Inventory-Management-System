@@ -1,0 +1,84 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblRequisitionSlip
+
+@{
+    ViewBag.Title = "seeSpecificRequisitionSlipForm";
+}
+
+<h2>Requisition Slip Details</h2>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.Raw("Date")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequisitionDate)
+        </dd>
+
+        <dt>
+            @Html.Raw("Purpose")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssuingPurpose)
+        </dd>
+
+        <dt>
+           @Html.Raw("Name and Amount")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AllInventoryNameWithAmount)
+        </dd>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <dt>
+            @Html.Raw("Applicant")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+        
+
+        
+
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Recommend", "recommend", new { reqSlipId = Model.RequisitionSlipId }) |
+    @Html.ActionLink("Reject", "reject", new { reqSlipId = Model.RequisitionSlipId }) |
+    @Html.ActionLink("Back to Queue", "seeUncheckedRequisitionSlip");
+</p>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

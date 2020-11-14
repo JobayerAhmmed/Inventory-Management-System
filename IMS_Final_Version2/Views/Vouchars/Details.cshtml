@@ -1,0 +1,26 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblVouchar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblVouchar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VoucharFilePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VoucharFilePath)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VoucharId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

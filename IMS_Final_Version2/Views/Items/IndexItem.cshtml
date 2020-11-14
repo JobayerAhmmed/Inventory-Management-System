@@ -1,0 +1,53 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblItem>
+
+@{
+    ViewBag.Title = "Item";
+}
+
+<h4>List of items</h4>
+
+<p>
+    @Html.ActionLink("Create New", "CreateItem", new { sectorId = ViewBag.SectorId, inventoryId = ViewBag.InventoryId }, null) |
+    @Html.ActionLink("Back to receive", "IndexWithSectorAndInventoryId", "LeftPages", new { sectorId = ViewBag.SectorId, inventoryId = ViewBag.InventoryId }, null)
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Name of article
+        </th>
+        <th>
+            Register Book
+        </th>
+        <th>
+            Item description
+        </th>
+        <th>
+            Is issued?
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblSector.SectorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPicked)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.ItemId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ItemId })*@
+            </td>
+        </tr>
+    }
+</table>
+<hr />
+@Html.ActionLink("Back to Home", "defineRole", "System")

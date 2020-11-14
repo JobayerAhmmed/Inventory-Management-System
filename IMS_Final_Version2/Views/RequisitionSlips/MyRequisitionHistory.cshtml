@@ -1,0 +1,185 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblRequisitionSlip>
+
+@{
+    ViewBag.Title = "RequisitionHistory";
+}
+
+<h3>Requisition records</h3>
+
+
+<table class="table">
+
+    <tr>
+        <th>
+            @Html.Raw("Date")
+        </th>
+        <th>
+            @Html.Raw("Purpose")
+        </th>
+        <th>
+            @Html.Raw("Name with amount")
+        </th>
+        <th>
+            @Html.Raw("Recommender Response")
+        </th>
+        <th>
+           @Html.Raw("Director Response")
+        </th>
+        <th>
+            @Html.Raw("Requisition Status")
+        </th>
+
+        <th>
+            @Html.Raw("Note")
+        </th>
+
+        <th>
+            @Html.Raw("Recommender name")
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+
+    if (item.ApplicantId == ViewBag.UserId && item.ApplicationStatus=="pending")
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequisitionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssuingPurpose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllInventoryNameWithAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecommenderResponse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirectorResponse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationStatus)
+            </td>
+  
+            <td>
+                @Html.DisplayFor(modelItem => item.tblNotification.NotificationBody)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.tblUser1.UserName)
+            </td>
+  
+            <td>
+                
+                @Html.ActionLink("See Details", "Details", new { id = item.RequisitionSlipId }) 
+               
+            </td>
+        </tr>
+    }
+    
+    
+
+}
+
+
+    @foreach (var itemTwo in Model)
+    {
+
+        if (itemTwo.ApplicantId == ViewBag.UserId && itemTwo.ApplicationStatus == "accepted")
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.RequisitionDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.IssuingPurpose)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.AllInventoryNameWithAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.RecommenderResponse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.DirectorResponse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.ApplicationStatus)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.tblNotification.NotificationBody)
+                </td>
+ 
+                <td>
+                    @Html.DisplayFor(modelItem => itemTwo.tblUser1.UserName)
+                </td>
+
+                <td>
+                    
+                    @Html.ActionLink("See Details", "Details", new { id = itemTwo.RequisitionSlipId }) 
+                   
+                </td>
+            </tr>
+        }
+        
+  }
+
+
+    @foreach (var itemThree in Model)
+    {
+
+        if (itemThree.ApplicantId == ViewBag.UserId && itemThree.ApplicationStatus == "rejected")
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.RequisitionDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.IssuingPurpose)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.AllInventoryNameWithAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.RecommenderResponse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.DirectorResponse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.ApplicationStatus)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.tblNotification.NotificationBody)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => itemThree.tblUser1.UserName)
+                </td>
+
+                <td>
+                   
+                    @Html.ActionLink("See Details", "Details", new { id = itemThree.RequisitionSlipId }) 
+                    
+                </td>
+            </tr>
+        }
+
+    }
+        
+
+    
+
+</table>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

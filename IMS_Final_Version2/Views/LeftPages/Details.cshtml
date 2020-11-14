@@ -1,0 +1,82 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblLeftPage
+
+@{
+    ViewBag.Title = "Receive";
+}
+
+<h4>Details</h4>
+
+<div>
+    <h4>Receive</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Name of Article
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblInventory.InventoryName)
+        </dd>
+
+        <dt>
+            Register Book
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblSector.SectorName)
+        </dd>
+
+        <dt>
+            Balance
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousBalance)
+        </dd>
+
+        <dt>
+            Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceivingDate)
+        </dd>
+
+        <dt>
+            RECEIVED
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblVouchar.VoucharFilePath)
+        </dd>
+
+        <dt>
+            No. of aritcles
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfReceivingArticles)
+        </dd>
+
+        <dt>
+            Total
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalBalance)
+        </dd>
+
+        <dt>
+            Serial
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceivingSerial)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PageId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

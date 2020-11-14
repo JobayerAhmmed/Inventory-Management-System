@@ -1,0 +1,90 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblRequisitionSlip>
+
+@{
+    ViewBag.Title = "Requisition Slip Check";
+}
+
+<h3>Requisition Slip Verification Records</h3>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("Date")
+        </th>
+        <th>
+           @Html.Raw("Purpose")
+        </th>
+        <th>
+            @Html.Raw("Name and Amount")
+        </th>
+        <th>
+            @Html.Raw("Recommender Response")
+        </th>
+       
+        <th>
+            @Html.Raw("Requisition Status")
+        </th>
+       
+        
+        <th>
+            @Html.Raw("Applicant")
+        </th>
+        <th>
+            @Html.Raw("Recommender")
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    if (item.DirectorId == ViewBag.UserId)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequisitionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssuingPurpose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllInventoryNameWithAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecommenderResponse)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationStatus)
+            </td>
+            
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.tblUser.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblUser2.UserName)
+            </td>
+            
+            <td>
+                
+                @Html.ActionLink("Details", "Details", new { id = item.RequisitionSlipId }) 
+                
+            </td>
+        </tr>
+    }
+
+
+}
+
+</table>
+
+
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

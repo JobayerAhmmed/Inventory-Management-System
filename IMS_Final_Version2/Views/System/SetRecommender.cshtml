@@ -1,0 +1,95 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblUser>
+
+
+@{
+    ViewBag.Title = "SetRecommender";
+}
+
+<h2>SetRecommender</h2>
+
+
+@using (Html.BeginForm("SetRecommender", "System", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary(true);
+    <table class="table">
+        <tr>
+            <th>
+                <p>Select Here</p>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.JobPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystemPosition)
+            </th>
+
+            <th></th>
+        </tr>
+
+
+
+
+        @foreach (var modelValue in Model)
+        {
+            if (modelValue.SystemPosition != 1 && modelValue.SystemPosition != 4)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="check" value="@modelValue.UserId" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => modelValue.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => modelValue.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => modelValue.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => modelValue.JobPosition)
+                    </td>
+                    <td>
+                        <p>@SystemRole((int)modelValue.SystemPosition)</p>
+                    </td>
+                </tr>
+            }
+
+
+        }
+    </table>
+    <div class="form-actions no-color">
+        <input type="submit" value="Save" />
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @functions{
+        public string SystemRole(int SystemPosition)
+        {
+            if (SystemPosition == 1)
+                return "Store in Charge";
+            else if (SystemPosition == 2)
+                return "User";
+            else if (SystemPosition == 3)
+                return "Recommender";
+            else if (SystemPosition == 4)
+                return "Director";
+            else
+                return "";
+        }
+    }
+}
+
+

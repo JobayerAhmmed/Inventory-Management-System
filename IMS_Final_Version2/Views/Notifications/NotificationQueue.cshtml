@@ -1,0 +1,76 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblNotification>
+
+@{
+    ViewBag.Title = "NotificationQueue";
+}
+
+<h2>Queue</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("Sending Date")
+        </th>
+        <th>
+            @Html.Raw("Notification")
+        </th>
+        
+         <th>
+            @Html.Raw("Sender Username")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (item.IsSeen == 0 && item.ReceiverId == ViewBag.userId)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationBody)
+                </td>
+                
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.tblUser1.UserName)
+                </td>
+               
+            </tr>
+        }
+
+    }
+
+    @foreach (var item in Model)
+    {
+        if (item.IsSeen == 1 && item.ReceiverId == ViewBag.userId)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NotificationBody)
+                </td>
+                               
+                <td>
+                    @Html.DisplayFor(modelItem => item.tblUser1.UserName)
+                </td>
+                
+            </tr>
+        }
+
+    }
+
+</table>
+
+<h2></h2>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

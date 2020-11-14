@@ -1,0 +1,32 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblInventory
+
+@{
+    ViewBag.Title = "Article";
+}
+
+<div>
+    <h4>Article details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryName)
+        </dd>
+
+        <dt>
+            Description
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InventoryId, sectorId = ViewBag.SectorId }, null) |
+    @Html.ActionLink("Back to List", "IndexWithSectorId", new { sectorId = ViewBag.SectorId }, null)
+</p>

@@ -1,0 +1,64 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblNotification
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tblNotification</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationBody)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationBody)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSeen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSeen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblUser1.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblUser1.UserName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

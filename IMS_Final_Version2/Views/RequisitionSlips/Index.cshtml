@@ -1,0 +1,93 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblRequisitionSlip>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequisitionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssuingPurpose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AllInventoryNameWithAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecommenderResponse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirectorResponse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemsId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblNotification.NotificationBody)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblUser.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblUser1.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tblUser2.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequisitionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IssuingPurpose)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AllInventoryNameWithAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecommenderResponse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DirectorResponse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemsId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblNotification.NotificationBody)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblUser.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblUser1.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblUser2.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RequisitionSlipId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RequisitionSlipId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RequisitionSlipId })
+        </td>
+    </tr>
+}
+
+</table>

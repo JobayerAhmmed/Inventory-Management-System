@@ -1,0 +1,90 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblRequisitionSlip>
+
+@{
+    ViewBag.Title = "RecommenderRequisitionHistoryCheckAsRecommender";
+}
+
+<h3>Recommendation History</h3>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("Date")
+        </th>
+        <th>
+            @Html.Raw("Purpose")
+        </th>
+        <th>
+            @Html.Raw("Name and amount")
+        </th>
+        <th>
+            @Html.Raw("Recommender Response")
+        </th>
+        <th>
+            @Html.Raw("Director Response")
+        </th>
+        <th>
+            @Html.Raw("Requisition Status")
+        </th>
+
+        <th>
+           @Html.Raw("Note")
+        </th>
+        <th>
+            @Html.Raw("Applicant")
+        </th>
+        
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    if (item.RecommenderId == ViewBag.UserId )
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequisitionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssuingPurpose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllInventoryNameWithAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecommenderResponse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirectorResponse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationStatus)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.tblNotification.NotificationBody)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tblUser.UserName)
+            </td>
+            
+            <td>
+                
+                @Html.ActionLink("See Details", "Details", new { id = item.RequisitionSlipId }) 
+               
+            </td>
+        </tr>
+}
+
+}
+
+</table>
+<h1></h1>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>

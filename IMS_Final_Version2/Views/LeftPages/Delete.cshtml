@@ -1,0 +1,96 @@
+﻿@model IMS_Final_Version2.Models.dbModel.tblLeftPage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tblLeftPage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiveingInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiveingInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceivingSerial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceivingSerial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceivingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceivingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfReceivingArticles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfReceivingArticles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblInventory.InventoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblInventory.InventoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblSector.SectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblSector.SectorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tblVouchar.VoucharFilePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblVouchar.VoucharFilePath)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

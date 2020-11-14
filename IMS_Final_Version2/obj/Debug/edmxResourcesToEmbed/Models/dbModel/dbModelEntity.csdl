@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_IMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblInventory">
+    <Key>
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Name="InventoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InventoryDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="InventoryPicturePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblItems" Relationship="Self.FK__tblItem__Invento__182C9B23" FromRole="tblInventory" ToRole="tblItem" />
+    <NavigationProperty Name="tblLeftPages" Relationship="Self.FK__tblLeftPa__Inven__1DE57479" FromRole="tblInventory" ToRole="tblLeftPage" />
+  </EntityType>
+  <EntityType Name="tblItem">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IsPicked" Type="Int32" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="InventoryId" Type="Int32" />
+    <NavigationProperty Name="tblInventory" Relationship="Self.FK__tblItem__Invento__182C9B23" FromRole="tblItem" ToRole="tblInventory" />
+    <NavigationProperty Name="tblSector" Relationship="Self.FK__tblItem__SectorI__173876EA" FromRole="tblItem" ToRole="tblSector" />
+    <NavigationProperty Name="tblRightPages" Relationship="Self.FK__tblRightP__ItemI__2C3393D0" FromRole="tblItem" ToRole="tblRightPage" />
+  </EntityType>
+  <EntityType Name="tblLeftPage">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiveingInfo" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ReceivingSerial" Type="Int32" />
+    <Property Name="ReceivingDate" Type="DateTime" Precision="3" />
+    <Property Name="PreviousBalance" Type="Int32" />
+    <Property Name="NoOfReceivingArticles" Type="Int32" />
+    <Property Name="TotalBalance" Type="Int32" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="InventoryId" Type="Int32" />
+    <Property Name="VoucharId" Type="Int32" />
+    <NavigationProperty Name="tblInventory" Relationship="Self.FK__tblLeftPa__Inven__1DE57479" FromRole="tblLeftPage" ToRole="tblInventory" />
+    <NavigationProperty Name="tblSector" Relationship="Self.FK__tblLeftPa__Secto__1CF15040" FromRole="tblLeftPage" ToRole="tblSector" />
+    <NavigationProperty Name="tblVouchar" Relationship="Self.FK__tblLeftPa__Vouch__1ED998B2" FromRole="tblLeftPage" ToRole="tblVouchar" />
+    <NavigationProperty Name="tblRightPages" Relationship="Self.FK__tblRightP__PageI__2B3F6F97" FromRole="tblLeftPage" ToRole="tblRightPage" />
+  </EntityType>
+  <EntityType Name="tblNotification">
+    <Key>
+      <PropertyRef Name="NotificationId" />
+    </Key>
+    <Property Name="NotificationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SenderId" Type="Int32" />
+    <Property Name="ReceiverId" Type="Int32" />
+    <Property Name="NotificationDate" Type="DateTime" Precision="3" />
+    <Property Name="NotificationBody" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IsSeen" Type="Int32" />
+    <NavigationProperty Name="tblUser" Relationship="Self.FK__tblNotifi__Recei__22AA2996" FromRole="tblNotification" ToRole="tblUser" />
+    <NavigationProperty Name="tblUser1" Relationship="Self.FK__tblNotifi__Sende__21B6055D" FromRole="tblNotification" ToRole="tblUser" />
+    <NavigationProperty Name="tblRequisitionSlips" Relationship="Self.FK__tblRequis__Notif__286302EC" FromRole="tblNotification" ToRole="tblRequisitionSlip" />
+  </EntityType>
+  <EntityType Name="tblReport">
+    <Key>
+      <PropertyRef Name="ReportId" />
+    </Key>
+    <Property Name="ReportId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SectorId" Type="Int32" />
+    <Property Name="ReportTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ReportDate" Type="DateTime" Precision="3" />
+    <Property Name="ReportFilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblSector" Relationship="Self.FK__tblReport__Secto__30F848ED" FromRole="tblReport" ToRole="tblSector" />
+  </EntityType>
+  <EntityType Name="tblRequisitionSlip">
+    <Key>
+      <PropertyRef Name="RequisitionSlipId" />
+    </Key>
+    <Property Name="RequisitionSlipId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionDate" Type="DateTime" Precision="3" />
+    <Property Name="IssuingPurpose" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AllInventoryNameWithAmount" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicantId" Type="Int32" />
+    <Property Name="RecommenderId" Type="Int32" />
+    <Property Name="DirectorId" Type="Int32" />
+    <Property Name="RecommenderResponse" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DirectorResponse" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ItemsId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="NotificationId" Type="Int32" />
+    <NavigationProperty Name="tblNotification" Relationship="Self.FK__tblRequis__Notif__286302EC" FromRole="tblRequisitionSlip" ToRole="tblNotification" />
+    <NavigationProperty Name="tblUser" Relationship="Self.FK__tblRequis__Appli__25869641" FromRole="tblRequisitionSlip" ToRole="tblUser" />
+    <NavigationProperty Name="tblUser1" Relationship="Self.FK__tblRequis__Direc__276EDEB3" FromRole="tblRequisitionSlip" ToRole="tblUser" />
+    <NavigationProperty Name="tblUser2" Relationship="Self.FK__tblRequis__Recom__267ABA7A" FromRole="tblRequisitionSlip" ToRole="tblUser" />
+    <NavigationProperty Name="tblRightPages" Relationship="Self.FK__tblRightP__Requi__2E1BDC42" FromRole="tblRequisitionSlip" ToRole="tblRightPage" />
+  </EntityType>
+  <EntityType Name="tblRightPage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TakingDate" Type="DateTime" Precision="3" />
+    <Property Name="WhereLocated" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PageId" Type="Int32" />
+    <Property Name="ItemId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="RequisitionSerialNumber" Type="Int32" />
+    <NavigationProperty Name="tblItem" Relationship="Self.FK__tblRightP__ItemI__2C3393D0" FromRole="tblRightPage" ToRole="tblItem" />
+    <NavigationProperty Name="tblLeftPage" Relationship="Self.FK__tblRightP__PageI__2B3F6F97" FromRole="tblRightPage" ToRole="tblLeftPage" />
+    <NavigationProperty Name="tblRequisitionSlip" Relationship="Self.FK__tblRightP__Requi__2E1BDC42" FromRole="tblRightPage" ToRole="tblRequisitionSlip" />
+    <NavigationProperty Name="tblUser" Relationship="Self.FK__tblRightP__UserI__2D27B809" FromRole="tblRightPage" ToRole="tblUser" />
+  </EntityType>
+  <EntityType Name="tblSector">
+    <Key>
+      <PropertyRef Name="SectorId" />
+    </Key>
+    <Property Name="SectorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SectorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SectorDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatingDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tblItems" Relationship="Self.FK__tblItem__SectorI__173876EA" FromRole="tblSector" ToRole="tblItem" />
+    <NavigationProperty Name="tblLeftPages" Relationship="Self.FK__tblLeftPa__Secto__1CF15040" FromRole="tblSector" ToRole="tblLeftPage" />
+    <NavigationProperty Name="tblReports" Relationship="Self.FK__tblReport__Secto__30F848ED" FromRole="tblSector" ToRole="tblReport" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="JobPosition" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="SystemPosition" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="PhotoPath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="SignaturePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblNotifications" Relationship="Self.FK__tblNotifi__Recei__22AA2996" FromRole="tblUser" ToRole="tblNotification" />
+    <NavigationProperty Name="tblNotifications1" Relationship="Self.FK__tblNotifi__Sende__21B6055D" FromRole="tblUser" ToRole="tblNotification" />
+    <NavigationProperty Name="tblRequisitionSlips" Relationship="Self.FK__tblRequis__Appli__25869641" FromRole="tblUser" ToRole="tblRequisitionSlip" />
+    <NavigationProperty Name="tblRequisitionSlips1" Relationship="Self.FK__tblRequis__Direc__276EDEB3" FromRole="tblUser" ToRole="tblRequisitionSlip" />
+    <NavigationProperty Name="tblRequisitionSlips2" Relationship="Self.FK__tblRequis__Recom__267ABA7A" FromRole="tblUser" ToRole="tblRequisitionSlip" />
+    <NavigationProperty Name="tblRightPages" Relationship="Self.FK__tblRightP__UserI__2D27B809" FromRole="tblUser" ToRole="tblRightPage" />
+  </EntityType>
+  <EntityType Name="tblVouchar">
+    <Key>
+      <PropertyRef Name="VoucharId" />
+    </Key>
+    <Property Name="VoucharId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VoucharFilePath" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblLeftPages" Relationship="Self.FK__tblLeftPa__Vouch__1ED998B2" FromRole="tblVouchar" ToRole="tblLeftPage" />
+  </EntityType>
+  <Association Name="FK__tblItem__Invento__182C9B23">
+    <End Role="tblInventory" Type="Self.tblInventory" Multiplicity="0..1" />
+    <End Role="tblItem" Type="Self.tblItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblInventory">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="tblItem">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblLeftPa__Inven__1DE57479">
+    <End Role="tblInventory" Type="Self.tblInventory" Multiplicity="0..1" />
+    <End Role="tblLeftPage" Type="Self.tblLeftPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblInventory">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="tblLeftPage">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblItem__SectorI__173876EA">
+    <End Role="tblSector" Type="Self.tblSector" Multiplicity="0..1" />
+    <End Role="tblItem" Type="Self.tblItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSector">
+        <PropertyRef Name="SectorId" />
+      </Principal>
+      <Dependent Role="tblItem">
+        <PropertyRef Name="SectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRightP__ItemI__2C3393D0">
+    <End Role="tblItem" Type="Self.tblItem" Multiplicity="0..1" />
+    <End Role="tblRightPage" Type="Self.tblRightPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblItem">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="tblRightPage">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblLeftPa__Secto__1CF15040">
+    <End Role="tblSector" Type="Self.tblSector" Multiplicity="0..1" />
+    <End Role="tblLeftPage" Type="Self.tblLeftPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSector">
+        <PropertyRef Name="SectorId" />
+      </Principal>
+      <Dependent Role="tblLeftPage">
+        <PropertyRef Name="SectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblLeftPa__Vouch__1ED998B2">
+    <End Role="tblVouchar" Type="Self.tblVouchar" Multiplicity="0..1" />
+    <End Role="tblLeftPage" Type="Self.tblLeftPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVouchar">
+        <PropertyRef Name="VoucharId" />
+      </Principal>
+      <Dependent Role="tblLeftPage">
+        <PropertyRef Name="VoucharId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRightP__PageI__2B3F6F97">
+    <End Role="tblLeftPage" Type="Self.tblLeftPage" Multiplicity="0..1" />
+    <End Role="tblRightPage" Type="Self.tblRightPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeftPage">
+        <PropertyRef Name="PageId" />
+      </Principal>
+      <Dependent Role="tblRightPage">
+        <PropertyRef Name="PageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblNotifi__Recei__22AA2996">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblNotification" Type="Self.tblNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblNotification">
+        <PropertyRef Name="ReceiverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblNotifi__Sende__21B6055D">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblNotification" Type="Self.tblNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblNotification">
+        <PropertyRef Name="SenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRequis__Notif__286302EC">
+    <End Role="tblNotification" Type="Self.tblNotification" Multiplicity="0..1" />
+    <End Role="tblRequisitionSlip" Type="Self.tblRequisitionSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNotification">
+        <PropertyRef Name="NotificationId" />
+      </Principal>
+      <Dependent Role="tblRequisitionSlip">
+        <PropertyRef Name="NotificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblReport__Secto__30F848ED">
+    <End Role="tblSector" Type="Self.tblSector" Multiplicity="0..1" />
+    <End Role="tblReport" Type="Self.tblReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSector">
+        <PropertyRef Name="SectorId" />
+      </Principal>
+      <Dependent Role="tblReport">
+        <PropertyRef Name="SectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRequis__Appli__25869641">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblRequisitionSlip" Type="Self.tblRequisitionSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblRequisitionSlip">
+        <PropertyRef Name="ApplicantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRequis__Direc__276EDEB3">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblRequisitionSlip" Type="Self.tblRequisitionSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblRequisitionSlip">
+        <PropertyRef Name="DirectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRequis__Recom__267ABA7A">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblRequisitionSlip" Type="Self.tblRequisitionSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblRequisitionSlip">
+        <PropertyRef Name="RecommenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRightP__Requi__2E1BDC42">
+    <End Role="tblRequisitionSlip" Type="Self.tblRequisitionSlip" Multiplicity="0..1" />
+    <End Role="tblRightPage" Type="Self.tblRightPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRequisitionSlip">
+        <PropertyRef Name="RequisitionSlipId" />
+      </Principal>
+      <Dependent Role="tblRightPage">
+        <PropertyRef Name="RequisitionSerialNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblRightP__UserI__2D27B809">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblRightPage" Type="Self.tblRightPage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="tblRightPage">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_IMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblInventories" EntityType="Self.tblInventory" />
+    <EntitySet Name="tblItems" EntityType="Self.tblItem" />
+    <EntitySet Name="tblLeftPages" EntityType="Self.tblLeftPage" />
+    <EntitySet Name="tblNotifications" EntityType="Self.tblNotification" />
+    <EntitySet Name="tblReports" EntityType="Self.tblReport" />
+    <EntitySet Name="tblRequisitionSlips" EntityType="Self.tblRequisitionSlip" />
+    <EntitySet Name="tblRightPages" EntityType="Self.tblRightPage" />
+    <EntitySet Name="tblSectors" EntityType="Self.tblSector" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+    <EntitySet Name="tblVouchars" EntityType="Self.tblVouchar" />
+    <AssociationSet Name="FK__tblItem__Invento__182C9B23" Association="Self.FK__tblItem__Invento__182C9B23">
+      <End Role="tblInventory" EntitySet="tblInventories" />
+      <End Role="tblItem" EntitySet="tblItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblLeftPa__Inven__1DE57479" Association="Self.FK__tblLeftPa__Inven__1DE57479">
+      <End Role="tblInventory" EntitySet="tblInventories" />
+      <End Role="tblLeftPage" EntitySet="tblLeftPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblItem__SectorI__173876EA" Association="Self.FK__tblItem__SectorI__173876EA">
+      <End Role="tblSector" EntitySet="tblSectors" />
+      <End Role="tblItem" EntitySet="tblItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRightP__ItemI__2C3393D0" Association="Self.FK__tblRightP__ItemI__2C3393D0">
+      <End Role="tblItem" EntitySet="tblItems" />
+      <End Role="tblRightPage" EntitySet="tblRightPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblLeftPa__Secto__1CF15040" Association="Self.FK__tblLeftPa__Secto__1CF15040">
+      <End Role="tblSector" EntitySet="tblSectors" />
+      <End Role="tblLeftPage" EntitySet="tblLeftPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblLeftPa__Vouch__1ED998B2" Association="Self.FK__tblLeftPa__Vouch__1ED998B2">
+      <End Role="tblVouchar" EntitySet="tblVouchars" />
+      <End Role="tblLeftPage" EntitySet="tblLeftPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRightP__PageI__2B3F6F97" Association="Self.FK__tblRightP__PageI__2B3F6F97">
+      <End Role="tblLeftPage" EntitySet="tblLeftPages" />
+      <End Role="tblRightPage" EntitySet="tblRightPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblNotifi__Recei__22AA2996" Association="Self.FK__tblNotifi__Recei__22AA2996">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblNotification" EntitySet="tblNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblNotifi__Sende__21B6055D" Association="Self.FK__tblNotifi__Sende__21B6055D">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblNotification" EntitySet="tblNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRequis__Notif__286302EC" Association="Self.FK__tblRequis__Notif__286302EC">
+      <End Role="tblNotification" EntitySet="tblNotifications" />
+      <End Role="tblRequisitionSlip" EntitySet="tblRequisitionSlips" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblReport__Secto__30F848ED" Association="Self.FK__tblReport__Secto__30F848ED">
+      <End Role="tblSector" EntitySet="tblSectors" />
+      <End Role="tblReport" EntitySet="tblReports" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRequis__Appli__25869641" Association="Self.FK__tblRequis__Appli__25869641">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblRequisitionSlip" EntitySet="tblRequisitionSlips" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRequis__Direc__276EDEB3" Association="Self.FK__tblRequis__Direc__276EDEB3">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblRequisitionSlip" EntitySet="tblRequisitionSlips" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRequis__Recom__267ABA7A" Association="Self.FK__tblRequis__Recom__267ABA7A">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblRequisitionSlip" EntitySet="tblRequisitionSlips" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRightP__Requi__2E1BDC42" Association="Self.FK__tblRightP__Requi__2E1BDC42">
+      <End Role="tblRequisitionSlip" EntitySet="tblRequisitionSlips" />
+      <End Role="tblRightPage" EntitySet="tblRightPages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblRightP__UserI__2D27B809" Association="Self.FK__tblRightP__UserI__2D27B809">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblRightPage" EntitySet="tblRightPages" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

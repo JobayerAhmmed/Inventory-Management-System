@@ -1,0 +1,59 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblItem>
+
+@{
+    ViewBag.Title = "Item";
+}
+
+<h3>Select Item</h3>
+
+
+
+@using (Html.BeginForm("SelectItemFromInventory", "Items", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary(true);
+    <table class="table">
+        <tr>
+            <th>@Html.Raw("Check it")</th>
+            <th>
+               @Html.Raw("Description")
+            </th>
+            
+            <th>
+                @Html.Raw("Category")
+            </th>
+            
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+            
+
+            if (item.InventoryId == ViewBag.inventoryId && item.IsPicked==0)
+            {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="check" value="@item.ItemId" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemDescription)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tblInventory.InventoryName)
+                    </td>
+                    
+                    
+                </tr>
+            }
+        }
+
+    </table>
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Selected" />
+    </div>
+}

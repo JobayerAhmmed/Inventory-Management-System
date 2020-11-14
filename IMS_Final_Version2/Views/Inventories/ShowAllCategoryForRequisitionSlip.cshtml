@@ -1,0 +1,62 @@
+﻿@model IEnumerable<IMS_Final_Version2.Models.dbModel.tblInventory>
+
+@{
+    ViewBag.Title = "Categories";
+}
+<link href="~/Content/Style.css" rel="stylesheet" />
+<h3>Select Category</h3>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Raw("Category")
+        </th>
+        <th>
+            @Html.Raw("Description")
+        </th>
+        <th>
+            @Html.Raw("Picture")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.InventoryName, "SaveInventoryForRequsitionSlip", "Inventories", new { name = item.InventoryName, id = item.InventoryId }, null)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryDescription)
+            </td>
+            
+            <td class="inventoryImage">
+                <img src="@Url.Content("~/Images/MainImage.jpg")" alt="Picture is not available" />
+            </td>
+            
+            <td>
+                
+                @Html.ActionLink("Details", "Details", new { id = item.InventoryId }) 
+                
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+<a href="@Url.Action("CreateRequisitionSlip", "RequisitionSlips")" class="btn btn-warning">
+    Selection Complete
+    <span class="glyphicon glyphicon-plus-sign" />
+    <br/>
+</a>
+    </div>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @Html.ActionLink("Back To Home", "defineRole", "System", null, new { @class = "btn btn-info" })
+
+    </ul>
+</div>
+

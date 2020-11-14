@@ -1,0 +1,275 @@
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll.config
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.pdb
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Web.Infrastructure.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Owin.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\WebGrease.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.pdb
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.csprojResolveAssemblyReference.cache
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.dll
+c:\users\ishmam\documents\visual studio 2013\Projects\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.pdb
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll.config
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.pdb
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Web.Infrastructure.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Owin.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\WebGrease.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.pdb
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.csprojResolveAssemblyReference.cache
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.dll
+G:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.pdb
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll.config
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.pdb
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Web.Infrastructure.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Owin.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\WebGrease.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.pdb
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.csprojResolveAssemblyReference.cache
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.dll
+D:\IMS_Final\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.pdb
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll.config
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.pdb
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Web.Infrastructure.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Owin.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\WebGrease.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.pdb
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.csprojResolveAssemblyReference.cache
+H:\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.dll
+H:\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.pdb
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll.config
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\IMS_Final_Version2.pdb
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Web.Infrastructure.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Owin.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\WebGrease.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Helpers.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Mvc.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Optimization.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.Razor.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Deployment.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\System.Web.WebPages.Razor.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Antlr3.Runtime.pdb
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Newtonsoft.Json.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\EntityFramework.SqlServer.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Google.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.csprojResolveAssemblyReference.cache
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.dll
+F:\Academic\semester 5\505 Software Project Lab II\IMS_Final_Version2\IMS_Final_Version2\obj\Debug\IMS_Final_Version2.pdb
